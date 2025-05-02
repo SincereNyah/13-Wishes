@@ -1,0 +1,30 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Welcome Message Popup
+    setTimeout(() => {
+        alert("🎀 Welcome to 13 Wishes! I hope you have a magical day! ✨");
+    }, 500);
+
+    // Comment Section Logic
+    const form = document.getElementById("commentForm");
+    const commentList = document.getElementById("commentList");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById("name").value;
+        const comment = document.getElementById("comment").value;
+        
+        if (name && comment) {
+            const commentBox = document.createElement("div");
+            commentBox.classList.add("comment-box");
+            commentBox.innerHTML = `<strong>${name}:</strong> ${comment}`;
+            commentList.appendChild(commentBox);
+
+            form.reset();
+        }
+    });
+
+    // Background Music Auto-play
+    const bgMusic = document.getElementById("bg-music");
+    bgMusic.volume = 0.3; // Set music volume to low
+});
