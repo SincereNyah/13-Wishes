@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 Wishes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="images/hello-kitty-icon.png">
+</head>
+<body>
+    <!-- Floating Hearts Animation -->
+    <div class="floating-hearts"></div>
+
+    <header>
+        <h1>🎀 13 Wishes 🎀</h1>
+        <p class="subtitle">A Cute Space for Magical Thoughts ✨</p>
+        <nav>
+            <ul>
+                <li><a href="#">🏠 Home</a></li>
+                <li><a href="#">💖 About</a></li>
+                <li><a href="#">📩 Contact</a></li>
+                <li><a href="https://www.tiktok.com/@briabria" target="_blank">🎵 TikTok</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="post">
+            <h2>🌸 First Blog Post 🌸</h2>
+            <p class="date">Published on <time datetime="2025-04-01">April 1, 2025</time></p>
+            <p>Welcome to my blog! This is my first post. Stay tuned for more kawaii content! 🎀</p>
+        </article>
+
+        <!-- Comment Section -->
+        <section class="comments">
+            <h3>💬 Leave a Comment</h3>
+            <form id="commentForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="comment" placeholder="Write your comment..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div id="commentList"></div>
+        </section>
+    </main>
+
+    <!-- Background Music Player -->
+    <audio id="bg-music" loop autoplay>
+        <source src="music/kawaii-lofi.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <footer>
+        <p>&copy; 2025 13 Wishes. All rights reserved. 💕</p>
+    </footer>
+</body>
+</html>
