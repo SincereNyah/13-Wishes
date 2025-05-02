@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe6f2;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: url('images/custom-cursor.png'), auto;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffccdd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff66a3;
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    background-color: #ffccdd;
+    padding: 20px;
+    border-bottom: 4px solid #ff99bb;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff66a3;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #ff3385;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff3385;
+    font-weight: bold;
+}
+
+/* Blog Post */
+.post {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Comment Section */
+.comments {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#commentForm input, #commentForm textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff66a3;
+    border-radius: 5px;
+}
+
+#commentForm button {
+    background: #ff66a3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Floating Hearts Animation */
+.floating-hearts::before {
+    content: "💖 💕 💗 💞";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    background: #ffccdd;
+    padding: 10px;
+    margin-top: 20px;
+}
